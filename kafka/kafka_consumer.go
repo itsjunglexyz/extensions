@@ -28,10 +28,10 @@ import (
 
 	"github.com/confluentinc/confluent-kafka-go/kafka"
 	raven "github.com/getsentry/raven-go"
+	"github.com/itsjunglexyz/extensions/v9/kafka/interfaces"
+	"github.com/itsjunglexyz/extensions/v9/util"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
-	"github.com/topfreegames/extensions/v9/kafka/interfaces"
-	"github.com/topfreegames/extensions/v9/util"
 )
 
 // Consumer for getting push requests

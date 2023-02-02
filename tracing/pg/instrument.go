@@ -27,8 +27,8 @@ import (
 	"strings"
 
 	"github.com/go-pg/pg/orm"
+	"github.com/itsjunglexyz/extensions/v9/tracing"
 	"github.com/opentracing/opentracing-go"
-	"github.com/topfreegames/extensions/v9/tracing"
 )
 
 // Trace wraps a go-pg query and reports it to tracing

@@ -4,9 +4,9 @@ import (
 	"context"
 	"strings"
 
+	"github.com/itsjunglexyz/extensions/v9/tracing"
 	"github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/ext"
-	"github.com/topfreegames/extensions/v9/tracing"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 )

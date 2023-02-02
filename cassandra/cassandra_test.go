@@ -27,10 +27,10 @@ import (
 
 	"github.com/gocql/gocql"
 	"github.com/golang/mock/gomock"
+	"github.com/itsjunglexyz/extensions/v9/cassandra/mocks"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/spf13/viper"
-	"github.com/topfreegames/extensions/v9/cassandra/mocks"
 )
 
 type TestQueryObserver struct {

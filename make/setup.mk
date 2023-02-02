@@ -27,7 +27,7 @@ setup:
 	@go get github.com/gordonklaus/ineffassign
 	@go mod tidy
 
-mocks: mongo-mocks dog-mocks pg-mocks redis-mocks
+mocks: mongo-mocks dog-mocks pg-mocks redis-mocks kafka-mocks
 
 mongo-mocks:
 	@mockgen -source=mongo/interfaces/interfaces.go -destination=mongo/interfaces/mocks.go -package interfaces
@@ -44,3 +44,7 @@ pg-mocks:
 redis-mocks:
 	@mockgen -source=redis/interfaces/redis.go -destination=redis/mocks/redis.go -package mocks
 	@echo 'created redis mocks on ./redis/mocks/redis.go'
+
+kafka-mocks:
+	@mockgen -source=kafka/interfaces/kafka.go -destination=kafka/mocks/kafka.go -package mocks
+	@echo 'created kafka mocks on ./kafka/mocks/redis.go'

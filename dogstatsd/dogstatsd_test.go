@@ -10,8 +10,8 @@ package dogstatsd_test
 import (
 	"time"
 
-	"github.com/topfreegames/extensions/v9/dogstatsd"
-	"github.com/topfreegames/extensions/v9/dogstatsd/mocks"
+	"github.com/itsjunglexyz/extensions/v9/dogstatsd"
+	"github.com/itsjunglexyz/extensions/v9/dogstatsd/mocks"
 
 	. "github.com/onsi/ginkgo"
 )

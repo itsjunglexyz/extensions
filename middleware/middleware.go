@@ -13,10 +13,10 @@ import (
 
 	"github.com/asaskevich/govalidator"
 	"github.com/gorilla/mux"
+	"github.com/itsjunglexyz/extensions/v9/oauth2"
+	pg "github.com/itsjunglexyz/extensions/v9/pg/interfaces"
 	uuid "github.com/satori/go.uuid"
 	"github.com/sirupsen/logrus"
-	"github.com/topfreegames/extensions/v9/oauth2"
-	pg "github.com/topfreegames/extensions/v9/pg/interfaces"
 )
 
 type ctxKey string

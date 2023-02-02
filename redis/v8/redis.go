@@ -29,8 +29,8 @@ import (
 	"time"
 
 	"github.com/go-redis/redis/v8"
+	redistracing "github.com/itsjunglexyz/extensions/v9/tracing/redis/v8"
 	"github.com/spf13/viper"
-	redistracing "github.com/topfreegames/extensions/v9/tracing/redis/v8"
 )
 
 type ClientConfig struct {

@@ -28,10 +28,10 @@ import (
 	"time"
 
 	"github.com/go-redis/redis/v8"
+	redisextensions "github.com/itsjunglexyz/extensions/v9/redis/v8"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/spf13/viper"
-	redisextensions "github.com/topfreegames/extensions/v9/redis/v8"
 )
 
 var _ = Describe("Redis", func() {

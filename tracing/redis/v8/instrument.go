@@ -28,8 +28,8 @@ import (
 	"strings"
 
 	"github.com/go-redis/redis/v8"
+	"github.com/itsjunglexyz/extensions/v9/tracing"
 	"github.com/opentracing/opentracing-go"
-	"github.com/topfreegames/extensions/v9/tracing"
 )
 
 type redisTracingHook struct {

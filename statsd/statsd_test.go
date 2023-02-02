@@ -23,12 +23,12 @@
 package statsd
 
 import (
+	"github.com/itsjunglexyz/extensions/v9/statsd/mocks"
+	"github.com/itsjunglexyz/extensions/v9/util"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/sirupsen/logrus/hooks/test"
 	"github.com/spf13/viper"
-	"github.com/topfreegames/extensions/v9/statsd/mocks"
-	"github.com/topfreegames/extensions/v9/util"
 )
 
 var _ = Describe("StatsD Extension", func() {

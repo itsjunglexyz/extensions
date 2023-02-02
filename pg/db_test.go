@@ -31,9 +31,9 @@ import (
 	pg "github.com/go-pg/pg"
 	"github.com/go-pg/pg/orm"
 	"github.com/golang/mock/gomock"
+	"github.com/itsjunglexyz/extensions/v9/pg/mocks"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/topfreegames/extensions/v9/pg/mocks"
 )
 
 var _ = Describe("PG Extension - DB", func() {

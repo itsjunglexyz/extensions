@@ -27,8 +27,8 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
+	"github.com/itsjunglexyz/extensions/v9/tracing"
 	"github.com/opentracing/opentracing-go"
-	"github.com/topfreegames/extensions/v9/tracing"
 )
 
 // Jaeger is a middleware for tracing

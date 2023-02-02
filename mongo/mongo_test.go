@@ -24,11 +24,10 @@ package mongo_test
 
 import (
 	"github.com/golang/mock/gomock"
+	"github.com/itsjunglexyz/extensions/v9/mongo"
+	"github.com/itsjunglexyz/extensions/v9/mongo/interfaces"
 	"github.com/spf13/viper"
 	"gopkg.in/mgo.v2/bson"
-
-	. "github.com/topfreegames/extensions/v9/mongo"
-	"github.com/topfreegames/extensions/v9/mongo/interfaces"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
@@ -59,13 +58,13 @@ var _ = Describe("Mongo", func() {
 
 		Describe("Connect", func() {
 			It("Should use config to load connection details", func() {
-				_, err := NewClient("extensions.mongo", config, mockDb)
+				_, err := mongo.NewClient("extensions.mongo", config, mockDb)
 				Expect(err).NotTo(HaveOccurred())
 			})
 
 			It("Should call dial with timeout if timeout is specified", func() {
 				config.Set("extensions.mongo.url", "localhost:80")
-				client, err := NewClient("extensions.mongo", config)
+				client, err := mongo.NewClient("extensions.mongo", config)
 				Expect(err).To(HaveOccurred())
 				Expect(err.Error()).To(Equal("no reachable servers"))
 				Expect(client).To(BeNil())
@@ -74,7 +73,7 @@ var _ = Describe("Mongo", func() {
 
 		Describe("Close", func() {
 			It("Should close after creating", func() {
-				client, err := NewClient("extensions.mongo", config, mockDb)
+				client, err := mongo.NewClient("extensions.mongo", config, mockDb)
 				Expect(err).NotTo(HaveOccurred())
 
 				mockDb.EXPECT().Close()
@@ -86,7 +85,7 @@ var _ = Describe("Mongo", func() {
 			It("Should execute command with run", func() {
 				collectionName := "coll"
 
-				client, err := NewClient("extensions.mongo", config, mockDb)
+				client, err := mongo.NewClient("extensions.mongo", config, mockDb)
 				Expect(err).NotTo(HaveOccurred())
 
 				mockDb.EXPECT().Close()
@@ -100,7 +99,7 @@ var _ = Describe("Mongo", func() {
 			})
 
 			It("Should execute Run command", func() {
-				client, err := NewClient("extensions.mongo", config, mockDb)
+				client, err := mongo.NewClient("extensions.mongo", config, mockDb)
 				Expect(err).NotTo(HaveOccurred())
 
 				mockDb.EXPECT().Run(gomock.Any(), gomock.Any())

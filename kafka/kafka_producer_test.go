@@ -24,13 +24,13 @@ package kafka
 
 import (
 	"github.com/confluentinc/confluent-kafka-go/kafka"
+	"github.com/itsjunglexyz/extensions/v9/kafka/mocks"
+	"github.com/itsjunglexyz/extensions/v9/util"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/sirupsen/logrus"
 	"github.com/sirupsen/logrus/hooks/test"
 	"github.com/spf13/viper"
-	"github.com/topfreegames/extensions/v9/kafka/mocks"
-	"github.com/topfreegames/extensions/v9/util"
 )
 
 var _ = Describe("Producer Extension", func() {

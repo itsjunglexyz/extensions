@@ -29,9 +29,9 @@ import (
 
 	lock "github.com/bsm/redis-lock"
 	"github.com/go-redis/redis"
+	"github.com/itsjunglexyz/extensions/v9/redis/interfaces"
+	tredis "github.com/itsjunglexyz/extensions/v9/tracing/redis"
 	"github.com/spf13/viper"
-	"github.com/topfreegames/extensions/v9/redis/interfaces"
-	tredis "github.com/topfreegames/extensions/v9/tracing/redis"
 )
 
 // ClientConfig holds the input configs for a client.

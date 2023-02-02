@@ -23,7 +23,7 @@
 package elastic
 
 import (
-	"github.com/topfreegames/extensions/v9/http"
+	"github.com/itsjunglexyz/extensions/v9/http"
 	"gopkg.in/olivere/elastic.v5"
 )
 

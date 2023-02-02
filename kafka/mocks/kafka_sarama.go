@@ -14,6 +14,41 @@ type MockSyncProducer struct {
 	recorder *_MockSyncProducerRecorder
 }
 
+func (_m *MockSyncProducer) TxnStatus() sarama.ProducerTxnStatusFlag {
+	//TODO implement me
+	panic("implement me")
+}
+
+func (_m *MockSyncProducer) IsTransactional() bool {
+	//TODO implement me
+	panic("implement me")
+}
+
+func (_m *MockSyncProducer) BeginTxn() error {
+	//TODO implement me
+	panic("implement me")
+}
+
+func (_m *MockSyncProducer) CommitTxn() error {
+	//TODO implement me
+	panic("implement me")
+}
+
+func (_m *MockSyncProducer) AbortTxn() error {
+	//TODO implement me
+	panic("implement me")
+}
+
+func (_m *MockSyncProducer) AddOffsetsToTxn(offsets map[string][]*sarama.PartitionOffsetMetadata, groupId string) error {
+	//TODO implement me
+	panic("implement me")
+}
+
+func (_m *MockSyncProducer) AddMessageToTxn(msg *sarama.ConsumerMessage, groupId string, metadata *string) error {
+	//TODO implement me
+	panic("implement me")
+}
+
 // Recorder for MockSyncProducer (not exported)
 type _MockSyncProducerRecorder struct {
 	mock *MockSyncProducer

@@ -27,8 +27,8 @@ import (
 	"strings"
 
 	"github.com/gocql/gocql"
+	"github.com/itsjunglexyz/extensions/v9/cassandra/interfaces"
 	"github.com/spf13/viper"
-	"github.com/topfreegames/extensions/v9/cassandra/interfaces"
 )
 
 // Client is the struct that connects to Cassandra

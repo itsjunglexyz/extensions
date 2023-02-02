@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/itsjunglexyz/extensions/v9/dogstatsd"
 	"github.com/spf13/viper"
-	"github.com/topfreegames/extensions/v9/dogstatsd"
 )
 
 // MetricTypes constants

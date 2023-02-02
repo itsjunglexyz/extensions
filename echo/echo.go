@@ -23,8 +23,8 @@
 package echo
 
 import (
+	techo "github.com/itsjunglexyz/extensions/v9/tracing/echo"
 	"github.com/labstack/echo"
-	techo "github.com/topfreegames/extensions/v9/tracing/echo"
 )
 
 // Echo is the top-level framework instance.

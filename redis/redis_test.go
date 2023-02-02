@@ -28,10 +28,10 @@ import (
 
 	"github.com/go-redis/redis"
 	"github.com/golang/mock/gomock"
+	"github.com/itsjunglexyz/extensions/v9/redis/mocks"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/spf13/viper"
-	"github.com/topfreegames/extensions/v9/redis/mocks"
 )
 
 var _ = Describe("Redis Extension", func() {

@@ -26,10 +26,10 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/itsjunglexyz/extensions/v9/tracing"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/engine"
 	"github.com/opentracing/opentracing-go"
-	"github.com/topfreegames/extensions/v9/tracing"
 )
 
 // Instrument adds tracing instrumentation on an Echo app

@@ -26,9 +26,9 @@ import (
 	"time"
 
 	"github.com/alexcesaro/statsd"
+	"github.com/itsjunglexyz/extensions/v9/statsd/interfaces"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
-	"github.com/topfreegames/extensions/v9/statsd/interfaces"
 )
 
 // StatsD for sending metrics
