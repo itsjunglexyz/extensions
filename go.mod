@@ -14,7 +14,7 @@ require (
 	github.com/getsentry/raven-go v0.0.0-20170918144728-1452f6376ddb
 	github.com/globalsign/mgo v0.0.0-20180615134936-113d3961e731
 	github.com/go-gorp/gorp v2.2.0+incompatible
-	github.com/go-pg/pg v6.15.1+incompatible
+	github.com/go-pg/pg v8.0.7+incompatible
 	github.com/go-redis/redis v6.13.2+incompatible
 	github.com/go-redis/redis/v8 v8.11.4
 	github.com/gocql/gocql v0.0.0-20180224092422-2e9f2912ba58

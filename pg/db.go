@@ -39,6 +39,26 @@ type DB struct {
 	tx    interfaces.Tx
 }
 
+func (db *DB) ModelContext(c context.Context, model ...interface{}) *orm.Query {
+	return db.inner.WithContext(c).Model(model)
+}
+
+func (db *DB) ExecContext(c context.Context, query interface{}, params ...interface{}) (orm.Result, error) {
+	return db.inner.WithContext(c).Exec(query, params)
+}
+
+func (db *DB) ExecOneContext(c context.Context, query interface{}, params ...interface{}) (orm.Result, error) {
+	return db.inner.WithContext(c).ExecOne(query, params)
+}
+
+func (db *DB) QueryContext(c context.Context, model, query interface{}, params ...interface{}) (orm.Result, error) {
+	return db.inner.WithContext(c).Query(model, query, params)
+}
+
+func (db *DB) QueryOneContext(c context.Context, model, query interface{}, params ...interface{}) (orm.Result, error) {
+	return db.inner.WithContext(c).QueryOne(model, query, params)
+}
+
 // Select calls inner db select
 func (db *DB) Select(model interface{}) error {
 	return db.inner.Select(model)
